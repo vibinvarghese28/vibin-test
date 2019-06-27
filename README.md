@@ -23,6 +23,7 @@ vagrant up
 ```
 vagrant ssh
 apt-get update
+vi /etc/resolv.conf and add nameserver 8.8.8.8 before existing name server entry 
 ```
 #### Docker installation
 ```
