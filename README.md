@@ -16,6 +16,8 @@ cd ansible-lab
 vagrant init
 Edit Vagrant file and add "ubuntu/trusty64" on config.vm.box as below 
 config.vm.box = "ubuntu/trusty64"
+#### uncomment below line to set the new private network ####
+config.vm.network "private_network", ip: "192.168.33.10"
 vagrant up 
 ```
 ### Install and Configure docker and docker-compose to spin up containers
